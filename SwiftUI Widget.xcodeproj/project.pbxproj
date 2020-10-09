@@ -13,6 +13,14 @@
 		B19F902B253079B900DC559A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B19F902A253079B900DC559A /* Preview Assets.xcassets */; };
 		B19F9036253079B900DC559A /* SwiftUI_WidgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19F9035253079B900DC559A /* SwiftUI_WidgetTests.swift */; };
 		B19F9041253079B900DC559A /* SwiftUI_WidgetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19F9040253079B900DC559A /* SwiftUI_WidgetUITests.swift */; };
+		B19F905825307CD800DC559A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19F905725307CD800DC559A /* WidgetKit.framework */; };
+		B19F905A25307CD800DC559A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19F905925307CD800DC559A /* SwiftUI.framework */; };
+		B19F905D25307CD800DC559A /* WeightWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19F905C25307CD800DC559A /* WeightWidget.swift */; };
+		B19F905F25307CDC00DC559A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B19F905E25307CDC00DC559A /* Assets.xcassets */; };
+		B19F906325307CDC00DC559A /* WeightWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B19F905525307CD800DC559A /* WeightWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B19F906D25308AFE00DC559A /* WidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19F906C25308AFE00DC559A /* WidgetView.swift */; };
+		B19F906E25308AFE00DC559A /* WidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19F906C25308AFE00DC559A /* WidgetView.swift */; };
+		B19F90732530B82900DC559A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B19F9027253079B900DC559A /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +38,28 @@
 			remoteGlobalIDString = B19F901F253079B500DC559A;
 			remoteInfo = "SwiftUI Widget";
 		};
+		B19F906125307CDC00DC559A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B19F9018253079B500DC559A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B19F905425307CD800DC559A;
+			remoteInfo = WeightWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B19F906725307CDC00DC559A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B19F906325307CDC00DC559A /* WeightWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B19F9020253079B500DC559A /* SwiftUI Widget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Widget.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +74,13 @@
 		B19F903C253079B900DC559A /* SwiftUI WidgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI WidgetUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B19F9040253079B900DC559A /* SwiftUI_WidgetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_WidgetUITests.swift; sourceTree = "<group>"; };
 		B19F9042253079B900DC559A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B19F905525307CD800DC559A /* WeightWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WeightWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B19F905725307CD800DC559A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		B19F905925307CD800DC559A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		B19F905C25307CD800DC559A /* WeightWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightWidget.swift; sourceTree = "<group>"; };
+		B19F905E25307CDC00DC559A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B19F906025307CDC00DC559A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B19F906C25308AFE00DC559A /* WidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +105,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B19F905225307CD800DC559A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B19F905A25307CD800DC559A /* SwiftUI.framework in Frameworks */,
+				B19F905825307CD800DC559A /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +123,8 @@
 				B19F9022253079B500DC559A /* SwiftUI Widget */,
 				B19F9034253079B900DC559A /* SwiftUI WidgetTests */,
 				B19F903F253079B900DC559A /* SwiftUI WidgetUITests */,
+				B19F905B25307CD800DC559A /* WeightWidget */,
+				B19F905625307CD800DC559A /* Frameworks */,
 				B19F9021253079B500DC559A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +135,7 @@
 				B19F9020253079B500DC559A /* SwiftUI Widget.app */,
 				B19F9031253079B900DC559A /* SwiftUI WidgetTests.xctest */,
 				B19F903C253079B900DC559A /* SwiftUI WidgetUITests.xctest */,
+				B19F905525307CD800DC559A /* WeightWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,6 +178,26 @@
 			path = "SwiftUI WidgetUITests";
 			sourceTree = "<group>";
 		};
+		B19F905625307CD800DC559A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B19F905725307CD800DC559A /* WidgetKit.framework */,
+				B19F905925307CD800DC559A /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B19F905B25307CD800DC559A /* WeightWidget */ = {
+			isa = PBXGroup;
+			children = (
+				B19F905C25307CD800DC559A /* WeightWidget.swift */,
+				B19F906C25308AFE00DC559A /* WidgetView.swift */,
+				B19F905E25307CDC00DC559A /* Assets.xcassets */,
+				B19F906025307CDC00DC559A /* Info.plist */,
+			);
+			path = WeightWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,10 +208,12 @@
 				B19F901C253079B500DC559A /* Sources */,
 				B19F901D253079B500DC559A /* Frameworks */,
 				B19F901E253079B500DC559A /* Resources */,
+				B19F906725307CDC00DC559A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B19F906225307CDC00DC559A /* PBXTargetDependency */,
 			);
 			name = "SwiftUI Widget";
 			productName = "SwiftUI Widget";
@@ -186,6 +256,23 @@
 			productReference = B19F903C253079B900DC559A /* SwiftUI WidgetUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		B19F905425307CD800DC559A /* WeightWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B19F906425307CDC00DC559A /* Build configuration list for PBXNativeTarget "WeightWidgetExtension" */;
+			buildPhases = (
+				B19F905125307CD800DC559A /* Sources */,
+				B19F905225307CD800DC559A /* Frameworks */,
+				B19F905325307CD800DC559A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeightWidgetExtension;
+			productName = WeightWidgetExtension;
+			productReference = B19F905525307CD800DC559A /* WeightWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -206,6 +293,9 @@
 						CreatedOnToolsVersion = 12.0.1;
 						TestTargetID = B19F901F253079B500DC559A;
 					};
+					B19F905425307CD800DC559A = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
 				};
 			};
 			buildConfigurationList = B19F901B253079B500DC559A /* Build configuration list for PBXProject "SwiftUI Widget" */;
@@ -224,6 +314,7 @@
 				B19F901F253079B500DC559A /* SwiftUI Widget */,
 				B19F9030253079B900DC559A /* SwiftUI WidgetTests */,
 				B19F903B253079B900DC559A /* SwiftUI WidgetUITests */,
+				B19F905425307CD800DC559A /* WeightWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -252,6 +343,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B19F905325307CD800DC559A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B19F90732530B82900DC559A /* Assets.xcassets in Resources */,
+				B19F905F25307CDC00DC559A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -259,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B19F906D25308AFE00DC559A /* WidgetView.swift in Sources */,
 				B19F9026253079B500DC559A /* ContentView.swift in Sources */,
 				B19F9024253079B500DC559A /* SwiftUI_WidgetApp.swift in Sources */,
 			);
@@ -280,6 +381,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B19F905125307CD800DC559A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B19F906E25308AFE00DC559A /* WidgetView.swift in Sources */,
+				B19F905D25307CD800DC559A /* WeightWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,6 +402,11 @@
 			isa = PBXTargetDependency;
 			target = B19F901F253079B500DC559A /* SwiftUI Widget */;
 			targetProxy = B19F903D253079B900DC559A /* PBXContainerItemProxy */;
+		};
+		B19F906225307CDC00DC559A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B19F905425307CD800DC559A /* WeightWidgetExtension */;
+			targetProxy = B19F906125307CDC00DC559A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -415,6 +530,7 @@
 		B19F9046253079B900DC559A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -436,6 +552,7 @@
 		B19F9047253079B900DC559A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -534,6 +651,46 @@
 			};
 			name = Release;
 		};
+		B19F906525307CDC00DC559A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WeightWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ashish.SwiftUI-Widget.WeightWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B19F906625307CDC00DC559A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WeightWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ashish.SwiftUI-Widget.WeightWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -569,6 +726,15 @@
 			buildConfigurations = (
 				B19F904C253079B900DC559A /* Debug */,
 				B19F904D253079B900DC559A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B19F906425307CDC00DC559A /* Build configuration list for PBXNativeTarget "WeightWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B19F906525307CDC00DC559A /* Debug */,
+				B19F906625307CDC00DC559A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
